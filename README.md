@@ -21,8 +21,8 @@ The script first fetches URL output which depends on the user's anime input. The
 
 ### Scraping by links
 
-![links_scrape.png]
+![links_scrape](links_scrape.png)
 
 ### Scraping by details
 
-![details_scrape.png]
+![details_scrape](details_scrape.png)
