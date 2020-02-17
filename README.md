@@ -1,5 +1,5 @@
 # anime-scraper
-Scrapes anime links and details using bs4 module
+Scrapes anime links and details using **bs4** module
 
 <p align="center"><img src="https://image.freepik.com/free-vector/young-woman-anime-style-character-vector-illustration-design_18591-62213.jpg" width="270px" height="300px"></p>
 
@@ -15,7 +15,14 @@ The script first fetches URL output which depends on the user's anime input. The
   <li> requests </li>
 </ol>
 <p> To add these modules, enter the following commands in your terminal </p>
-<code> python -m pip install beautifulsoup</code><br/>
-<code> python -m pip install requests </code>
+<code> python -m pip install -r requirements.txt</code><br/>
 
+## Examples
 
+### Scraping by links
+
+![links_scrape](links_scrape.PNG)
+
+### Scraping by details
+
+![details_scrape](details_scrape.PNG)
