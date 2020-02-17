@@ -1,5 +1,11 @@
-import requests
-from bs4 import BeautifulSoup
+import os
+
+try:
+    import requests
+    from bs4 import BeautifulSoup
+except ImportError:
+    print('Some modules are not installed! Installing them automatically.')
+    os.system('python -m pip install -r requirements.txt')
 
 title = []
 link = []
@@ -25,8 +31,7 @@ def get_details(soup):
 def links(title,link):
     for i in range(len(title)):
         print("%d. %s : https://www10.gogoanime.io%s\n" % (i+1,title[i],link[i]))
-    
-    
+
 def entry():
     anime_name = input("[+] Enter the name of the Anime : ")
     search_url = ("https://www10.gogoanime.io//search.html?keyword=" + anime_name)
@@ -35,17 +40,17 @@ def entry():
     global soup
     soup = BeautifulSoup(content,features="html.parser")
     choice = input("[+] Do you want Details or Anime Links? (details/links) : ")
-    if choice=="details":
+    if choice.lower() == "details":
         get_details(soup)
         details(link[0])
-    elif choice=="links":
+    elif choice.lower() == "links":
         get_details(soup)
         links(title,link)
     else:
         print("[-] Enter a valid choice.")
-    
+
 if __name__ == "__main__":
     entry()
-    
+
 
 
