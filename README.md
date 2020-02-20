@@ -7,7 +7,7 @@ Scrapes anime links and details using **bs4** module
 Anime scraper uses python's requests and BeautifulSoup module to scrape anime titles. The data is fetched from GogoAnime. 
 
 <h2> How It Works </h2>
-The script first fetches URL output which depends on the user's anime input. The requests.get() and variable.content helps in fethcing the page source and the page content. A soup object is created from the page content using BeautifulSoup.<br/>The soup objects is then filtered multiple time to obtain the desired results.
+The script first fetches URL output which depends on the user's anime input. The requests.get() and variable.content helps in fetching the page source and the page content. A soup object is created from the page content using BeautifulSoup.<br/>The soup objects is then filtered multiple time to obtain the desired results.
 
 <h2> Libraries Required </h2>
 <ol>
